@@ -69,7 +69,7 @@ export default function AdminDashboard() {
             Admin Dashboard
           </motion.h1>
           <p className="text-gray-600">
-            Manage your MediSync website content and settings.
+            Manage your Healtrate.ai website content and settings.
           </p>
         </div>
 

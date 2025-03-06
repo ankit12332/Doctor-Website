@@ -165,8 +165,8 @@ export default function Demo() {
                         required
                         value={formData.name}
                         onChange={handleChange}
-                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3"
-                        placeholder="John Smith"
+                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 text-gray-900 placeholder-gray-500"
+                        placeholder="Enter your name"
                       />
                     </div>
 
@@ -181,8 +181,8 @@ export default function Demo() {
                         required
                         value={formData.email}
                         onChange={handleChange}
-                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3"
-                        placeholder="john@example.com"
+                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 text-gray-900 placeholder-gray-500"
+                        placeholder="Enter your email address"
                       />
                     </div>
 
@@ -196,8 +196,8 @@ export default function Demo() {
                         id="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3"
-                        placeholder="(123) 456-7890"
+                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 text-gray-900 placeholder-gray-500"
+                        placeholder="Enter your phone number"
                       />
                     </div>
 
@@ -211,7 +211,7 @@ export default function Demo() {
                         id="practice"
                         value={formData.practice}
                         onChange={handleChange}
-                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3"
+                        className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 text-gray-900 placeholder-gray-500"
                         placeholder="Your Medical Practice"
                       />
                     </div>
@@ -226,7 +226,7 @@ export default function Demo() {
                       id="practiceSize"
                       value={formData.practiceSize}
                       onChange={handleChange}
-                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3"
+                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 text-gray-900"
                     >
                       <option value="solo">Solo Practice</option>
                       <option value="small">Small Clinic (2-5 doctors)</option>
@@ -245,7 +245,7 @@ export default function Demo() {
                       rows={4}
                       value={formData.message}
                       onChange={handleChange}
-                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3"
+                      className="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 text-gray-900 placeholder-gray-500"
                       placeholder="Tell us about your practice and what you're looking to achieve..."
                     />
                   </div>
@@ -348,4 +348,4 @@ export default function Demo() {
       </section>
     </main>
   );
-} 
+}

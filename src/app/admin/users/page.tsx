@@ -7,9 +7,9 @@ import { UserIcon, PencilIcon, TrashIcon, PlusIcon } from '@heroicons/react/24/o
 export default function UserManagementPage() {
   // Mock data for demonstration
   const [users, setUsers] = useState([
-    { id: 1, name: 'Admin User', email: 'admin@medisync.ai', role: 'Admin', lastLogin: '2023-10-15 09:23:45' },
-    { id: 2, name: 'Content Manager', email: 'content@medisync.ai', role: 'Editor', lastLogin: '2023-10-14 14:12:30' },
-    { id: 3, name: 'Marketing Team', email: 'marketing@medisync.ai', role: 'Viewer', lastLogin: '2023-10-10 11:05:22' },
+    { id: 1, name: 'Admin User', email: 'admin@Healtrate.ai.ai', role: 'Admin', lastLogin: '2023-10-15 09:23:45' },
+    { id: 2, name: 'Content Manager', email: 'content@Healtrate.ai.ai', role: 'Editor', lastLogin: '2023-10-14 14:12:30' },
+    { id: 3, name: 'Marketing Team', email: 'marketing@Healtrate.ai.ai', role: 'Viewer', lastLogin: '2023-10-10 11:05:22' },
   ]);
 
   const [showAddModal, setShowAddModal] = useState(false);

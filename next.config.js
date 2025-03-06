@@ -44,7 +44,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'medisync.ai',
+        hostname: 'Healtrate.ai',
       },
     ],
     unoptimized: true,
@@ -56,7 +56,7 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
   poweredByHeader: false,
-  trailingSlash: true,
+  trailingSlash: false,
 };
 
-module.exports = nextConfig; 
+module.exports = nextConfig;

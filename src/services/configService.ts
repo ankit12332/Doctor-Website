@@ -1,6 +1,6 @@
 import { siteConfig as defaultConfig } from '@/config/siteConfig';
 
-const CONFIG_KEY = 'medisync_site_config';
+const CONFIG_KEY = 'Healtrate.ai_site_config';
 
 /**
  * Get the current site configuration

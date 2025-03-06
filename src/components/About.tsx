@@ -140,7 +140,7 @@ export default function About() {
             <div className="inline-block mb-2 px-3 py-1 bg-blue-50 rounded-full text-blue-600 text-sm font-medium">Our Experts</div>
             <h2 className="text-3xl font-bold text-gray-900 tracking-tight">Leadership Team</h2>
             <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
-              Meet the experts behind MediSync's innovative healthcare solutions
+              Meet the experts behind Healtrate.ai's innovative healthcare solutions
             </p>
             <div className="h-1 w-20 bg-blue-600 mx-auto rounded-full mt-6"></div>
           </div>
@@ -188,7 +188,7 @@ export default function About() {
               Join Us in Transforming Healthcare
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Experience how MediSync can revolutionize your practice management with our AI-powered solutions
+              Experience how Healtrate.ai can revolutionize your practice management with our AI-powered solutions
             </p>
             <motion.a
               href="/demo"

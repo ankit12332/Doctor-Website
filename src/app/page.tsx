@@ -1,12 +1,9 @@
 'use client';
 
-import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import dynamic from 'next/dynamic';
-import Hero from '@/components/Hero';
-import Services from '@/components/Services';
 import { ArrowRightIcon, CheckCircleIcon, ChartBarIcon, ClockIcon } from '@heroicons/react/24/outline';
+import siteConfig from "@/config/siteConfig";
 
 // Dynamically import components with loading fallback
 const AIAgents = dynamic(() => import('@/components/AIAgents'), {
@@ -20,6 +17,8 @@ const WhyChooseUs = dynamic(() => import('@/components/WhyChooseUs'), {
 const HealthcareAIInterface = dynamic(() => import('@/components/HealthcareAIInterface'), {
   loading: () => <div className="h-full w-full flex items-center justify-center">Loading advanced visualization...</div>
 });
+
+const { hero } = siteConfig.homePage;
 
 export default function Home() {
   return (
@@ -54,7 +53,7 @@ export default function Home() {
               </motion.div>
               
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight tracking-tight">
-                AI Agents
+                {hero.title}
                 <motion.span 
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -64,7 +63,7 @@ export default function Home() {
                     textShadow: '0 1px 2px rgba(0,0,0,0.05)'
                   }}
                 >
-                  Specific for Healthcare
+                  {hero.subtitle}
                 </motion.span>
               </h1>
               
@@ -74,7 +73,7 @@ export default function Home() {
                 transition={{ delay: 0.4, duration: 0.8 }}
                 className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
               >
-                Experience the future of medical practice management. Our AI agents work tirelessly to automate your administrative tasks, enhance patient care, and drive practice growth.
+                {hero.description}              
               </motion.p>
               
               <motion.div
@@ -183,19 +182,19 @@ export default function Home() {
           >
             {[
               { stat: '86%', desc: 'of physicians report burnout from administrative tasks', color: 'red' },
-              { stat: '42%', desc: 'of patient no-shows due to poor communication', color: 'yellow' },
+              { stat: '42%', desc: 'of patient no-shows due to poor communication', color: 'green' },
               { stat: '$125K', desc: 'average annual revenue loss from billing errors', color: 'orange' },
               { stat: '67%', desc: 'of practices struggle with effective marketing', color: 'purple' }
             ].map((item, index) => (
               <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: index * 0.1 }}
-                className={`bg-white rounded-xl shadow-sm border border-gray-100 p-6 text-center hover:shadow-md transition-all duration-300`}
+              key={index}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ delay: index * 0.1 }}
+              className={`bg-white rounded-xl shadow-sm border border-gray-100 p-6 text-center hover:shadow-md transition-all duration-300`}
               >
-                <div className={`text-3xl font-bold mb-2 text-${item.color}-600`}>{item.stat}</div>
-                <div className="text-gray-600 text-sm">{item.desc}</div>
+              <div className={`text-3xl font-bold mb-2 text-${item.color}-600`}>{item.stat}</div>
+              <div className="text-gray-600 text-sm">{item.desc}</div>
               </motion.div>
             ))}
           </motion.div>
@@ -377,7 +376,7 @@ export default function Home() {
               Success Stories
             </motion.div>
             <h2 className="text-3xl font-bold text-gray-900 mb-2 tracking-tight">What Our Clients Say</h2>
-            <p className="text-base text-gray-600 max-w-2xl mx-auto">Hear from healthcare professionals who have transformed their practices with MediSync</p>
+            <p className="text-base text-gray-600 max-w-2xl mx-auto">Hear from healthcare professionals who have transformed their practices with Healtrate.ai</p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-5">
@@ -395,7 +394,7 @@ export default function Home() {
                   </svg>
                 ))}
               </div>
-              <p className="text-gray-600 mb-4 text-sm italic">"MediSync has completely transformed our practice. The AI scheduling system alone has saved us countless hours and reduced no-shows by over 60%. The ROI has been incredible."</p>
+              <p className="text-gray-600 mb-4 text-sm italic">"Healtrate.ai has completely transformed our practice. The AI scheduling system alone has saved us countless hours and reduced no-shows by over 60%. The ROI has been incredible."</p>
               <div className="flex items-center">
                 <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
                   <span className="text-blue-600 font-bold text-xs">DR</span>
@@ -421,7 +420,7 @@ export default function Home() {
                   </svg>
                 ))}
               </div>
-              <p className="text-gray-600 mb-4 text-sm italic">"As a hospital administrator, I've implemented many systems over the years. MediSync stands out for its ease of integration and the measurable improvements in staff efficiency and patient satisfaction."</p>
+              <p className="text-gray-600 mb-4 text-sm italic">"As a hospital administrator, I've implemented many systems over the years. Healtrate.ai stands out for its ease of integration and the measurable improvements in staff efficiency and patient satisfaction."</p>
               <div className="flex items-center">
                 <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
                   <span className="text-blue-600 font-bold text-xs">JM</span>
@@ -447,7 +446,7 @@ export default function Home() {
                   </svg>
                 ))}
               </div>
-              <p className="text-gray-600 mb-4 text-sm italic">"The prescription management system is a game-changer. We've eliminated prescription errors and our patients love the automated refill system. MediSync has made our small practice run like a well-oiled machine."</p>
+              <p className="text-gray-600 mb-4 text-sm italic">"The prescription management system is a game-changer. We've eliminated prescription errors and our patients love the automated refill system. Healtrate.ai has made our small practice run like a well-oiled machine."</p>
               <div className="flex items-center">
                 <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
                   <span className="text-blue-600 font-bold text-xs">SP</span>
@@ -458,17 +457,6 @@ export default function Home() {
                 </div>
               </div>
             </motion.div>
-          </div>
-
-          <div className="text-center mt-8">
-            <motion.a
-              href="/demo"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="inline-flex items-center px-4 py-2 border border-blue-600 text-blue-600 rounded-lg text-sm font-medium hover:bg-blue-50 transition-colors"
-            >
-              Read More Success Stories <ArrowRightIcon className="ml-2 h-3 w-3" />
-            </motion.a>
           </div>
         </div>
       </section>
@@ -491,7 +479,7 @@ export default function Home() {
               Trusted Partners
             </motion.div>
             <h2 className="text-4xl font-bold text-gray-900 mb-4 tracking-tight">Our Healthcare Partners</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">MediSync integrates seamlessly with leading healthcare systems and providers</p>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Healtrate.ai integrates seamlessly with leading healthcare systems and providers</p>
           </motion.div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">

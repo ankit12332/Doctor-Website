@@ -4,7 +4,7 @@ export const siteConfig = {
     name: "Healtrate.ai",
     tagline: "AI-Powered Healthcare Solutions",
     description: "Experience the future of medical practice management with AI-driven solutions.",
-    email: "contact@medisync.ai",
+    email: "contact@healtrate.ai",
     phone: "+1 (555) 123-4567",
     address: "123 Healthcare Avenue, San Francisco, CA 94103",
     foundedYear: 2022,
@@ -12,22 +12,22 @@ export const siteConfig = {
   
   // Social Media
   social: {
-    twitter: "https://twitter.com/medisync",
-    facebook: "https://facebook.com/medisync",
-    linkedin: "https://linkedin.com/company/medisync",
-    instagram: "https://instagram.com/medisync",
+    twitter: "https://twitter.com/Healtrate.ai",
+    facebook: "https://facebook.com/Healtrate.ai",
+    linkedin: "https://linkedin.com/company/Healtrate.ai",
+    instagram: "https://instagram.com/Healtrate.ai",
   },
   
   // Contact Information
   contact: {
-    demoEmail: "demos@medisync.ai", // Email to receive demo notifications
-    supportEmail: "support@medisync.ai",
-    salesEmail: "sales@medisync.ai",
+    demoEmail: "demos@Healtrate.ai.ai", // Email to receive demo notifications
+    supportEmail: "support@Healtrate.ai.ai",
+    salesEmail: "sales@Healtrate.ai.ai",
   },
   
   // Site Settings
   site: {
-    url: "https://medisync.ai",
+    url: "https://Healtrate.ai.ai",
     themeColor: "#2563EB", // Blue-600
     accentColor: "#1E40AF", // Blue-800
     secondaryColor: "#6366F1", // Indigo-500
@@ -35,7 +35,7 @@ export const siteConfig = {
   
   // Admin Settings
   admin: {
-    password: "medisync2024", // Password to access admin area
+    password: "Healtrate.ai2024", // Password to access admin area
     showAdminButton: false, // Whether to show admin button in navigation
   },
   
@@ -74,7 +74,7 @@ export const siteConfig = {
     ],
     testimonials: [
       {
-        quote: "MediSync has transformed our practice. We've reduced administrative time by 70% and can now focus on what matters most - our patients.",
+        quote: "Healtrate.ai has transformed our practice. We've reduced administrative time by 70% and can now focus on what matters most - our patients.",
         author: "Dr. Sarah Johnson",
         title: "Family Medicine, Johnson Medical Group",
         rating: 5,
@@ -88,7 +88,7 @@ export const siteConfig = {
         image: "/testimonials/michael.jpg"
       },
       {
-        quote: "Implementation was seamless, and the ROI was immediate. Our practice has seen a 25% increase in revenue since adopting MediSync.",
+        quote: "Implementation was seamless, and the ROI was immediate. Our practice has seen a 25% increase in revenue since adopting Healtrate.ai.",
         author: "Amanda Rodriguez",
         title: "Practice Manager, Wellness Medical Center",
         rating: 5,
@@ -108,7 +108,7 @@ export const siteConfig = {
   // Solutions Page Content
   solutionsPage: {
     hero: {
-      title: "Healthcare Solutions",
+      title: "Our Solutions",
       subtitle: "Tailored for Your Practice",
       description: "Discover how our AI-powered platform addresses the unique challenges of modern healthcare practices."
     },
@@ -128,12 +128,12 @@ export const siteConfig = {
 
   // Demo Page Content
   demoPage: {
-    title: "Experience MediSync in Action",
+    title: "Experience Healtrate.ai in Action",
     description: "Schedule a personalized demo to see how our AI-powered platform can transform your healthcare practice",
     benefits: [
       {
         title: "Personalized Walkthrough",
-        description: "See how MediSync adapts to your specific practice workflow and requirements."
+        description: "See how Healtrate.ai adapts to your specific practice workflow and requirements."
       },
       {
         title: "Q&A Session",
@@ -149,13 +149,13 @@ export const siteConfig = {
   // About Page Content
   aboutPage: {
     hero: {
-      title: "About MediSync",
+      title: "About Healtrate.ai",
       subtitle: "Our Story",
       description: "We're on a mission to revolutionize healthcare practice management through intelligent automation and AI-driven solutions."
     },
     mission: {
       title: "Our Mission",
-      description: "At MediSync, we believe that healthcare providers should focus on what they do best - providing exceptional patient care. Our AI-powered platform handles the rest, automating administrative tasks and optimizing practice operations.",
+      description: "At Healtrate.ai, we believe that healthcare providers should focus on what they do best - providing exceptional patient care. Our AI-powered platform handles the rest, automating administrative tasks and optimizing practice operations.",
       additionalText: "We're committed to developing cutting-edge AI solutions that are secure, reliable, and tailored to the unique needs of healthcare practices.",
       image: "/about/mission.jpg"
     },
@@ -393,7 +393,7 @@ export const siteConfig = {
   // Insights Page Content
   insightsPage: {
     hero: {
-      title: "MediSync Insights",
+      title: "Healtrate.ai Insights",
       subtitle: "Healthcare Knowledge Hub",
       description: "Stay updated with the latest trends and insights in healthcare automation"
     },

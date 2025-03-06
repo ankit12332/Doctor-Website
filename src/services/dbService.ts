@@ -6,7 +6,7 @@
 import { DemoRequest } from './emailService';
 
 const DB_KEYS = {
-  DEMO_REQUESTS: 'medisync_demo_requests',
+  DEMO_REQUESTS: 'Healtrate.ai_demo_requests',
 };
 
 /**

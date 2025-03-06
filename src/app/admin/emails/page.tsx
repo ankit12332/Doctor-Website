@@ -15,65 +15,65 @@ export default function EmailTemplatesPage() {
     {
       id: 'welcome',
       name: 'Welcome Email',
-      subject: 'Welcome to MediSync!',
+      subject: 'Welcome to Healtrate.ai!',
       description: 'Sent to new users after registration',
       lastUpdated: '2023-09-15',
       content: `
-        <h1>Welcome to MediSync!</h1>
+        <h1>Welcome to Healtrate.ai!</h1>
         <p>Dear {{name}},</p>
-        <p>Thank you for joining MediSync, the leading AI-powered healthcare solution for medical practices.</p>
-        <p>With MediSync, you can:</p>
+        <p>Thank you for joining Healtrate.ai, the leading AI-powered healthcare solution for medical practices.</p>
+        <p>With Healtrate.ai, you can:</p>
         <ul>
           <li>Automate administrative tasks</li>
           <li>Enhance patient care</li>
           <li>Drive practice growth</li>
         </ul>
         <p>If you have any questions, please don't hesitate to contact our support team at {{supportEmail}}.</p>
-        <p>Best regards,<br>The MediSync Team</p>
+        <p>Best regards,<br>The Healtrate.ai Team</p>
       `,
     },
     {
       id: 'demo-confirmation',
       name: 'Demo Confirmation',
-      subject: 'Your MediSync Demo is Confirmed',
+      subject: 'Your Healtrate.ai Demo is Confirmed',
       description: 'Sent after a demo is scheduled',
       lastUpdated: '2023-10-02',
       content: `
         <h1>Your Demo is Confirmed!</h1>
         <p>Dear {{name}},</p>
-        <p>Thank you for scheduling a demo with MediSync. We're excited to show you how our AI-powered platform can transform your healthcare practice.</p>
+        <p>Thank you for scheduling a demo with Healtrate.ai. We're excited to show you how our AI-powered platform can transform your healthcare practice.</p>
         <p><strong>Demo Details:</strong></p>
         <p>Date: {{demoDate}}<br>Time: {{demoTime}}<br>Format: {{demoFormat}}</p>
         <p>If you need to reschedule, please contact us at {{contactEmail}}.</p>
-        <p>Best regards,<br>The MediSync Team</p>
+        <p>Best regards,<br>The Healtrate.ai Team</p>
       `,
     },
     {
       id: 'password-reset',
       name: 'Password Reset',
-      subject: 'Reset Your MediSync Password',
+      subject: 'Reset Your Healtrate.ai Password',
       description: 'Sent when a user requests a password reset',
       lastUpdated: '2023-08-20',
       content: `
         <h1>Password Reset Request</h1>
         <p>Dear {{name}},</p>
-        <p>We received a request to reset your password for your MediSync account. If you didn't make this request, you can safely ignore this email.</p>
+        <p>We received a request to reset your password for your Healtrate.ai account. If you didn't make this request, you can safely ignore this email.</p>
         <p>To reset your password, click the button below:</p>
         <p><a href="{{resetLink}}" style="display: inline-block; background-color: #2563EB; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px;">Reset Password</a></p>
         <p>This link will expire in 24 hours.</p>
-        <p>Best regards,<br>The MediSync Team</p>
+        <p>Best regards,<br>The Healtrate.ai Team</p>
       `,
     },
     {
       id: 'newsletter',
       name: 'Monthly Newsletter',
-      subject: 'MediSync Monthly: {{month}} Updates',
+      subject: 'Healtrate.ai Monthly: {{month}} Updates',
       description: 'Monthly newsletter sent to all subscribers',
       lastUpdated: '2023-10-10',
       content: `
-        <h1>MediSync Monthly: {{month}} {{year}}</h1>
+        <h1>Healtrate.ai Monthly: {{month}} {{year}}</h1>
         <p>Dear {{name}},</p>
-        <p>Here's what's new at MediSync this month:</p>
+        <p>Here's what's new at Healtrate.ai this month:</p>
         <h2>Latest Features</h2>
         <p>{{featuresContent}}</p>
         <h2>Healthcare Insights</h2>
@@ -81,7 +81,7 @@ export default function EmailTemplatesPage() {
         <h2>Customer Success Story</h2>
         <p>{{successStoryContent}}</p>
         <p>To manage your subscription preferences, <a href="{{preferencesLink}}">click here</a>.</p>
-        <p>Best regards,<br>The MediSync Team</p>
+        <p>Best regards,<br>The Healtrate.ai Team</p>
       `,
     },
   ];
