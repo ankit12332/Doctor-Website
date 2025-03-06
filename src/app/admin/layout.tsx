@@ -45,7 +45,7 @@ export default function AdminLayout({
         <div className="max-w-md w-full space-y-8">
           <div>
             <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-              {siteConfig.company.name} Admin
+              Healtrate.ai Admin
             </h2>
             <p className="mt-2 text-center text-sm text-gray-600">
               Please enter the admin password to continue
@@ -102,7 +102,7 @@ export default function AdminLayout({
           <div className="flex justify-between h-16 items-center">
             <div className="flex items-center">
               <Link href="/admin" className="flex items-center">
-                <span className="text-xl font-bold">{siteConfig.company.name} Admin</span>
+                <span className="text-xl font-bold">Healtrate.ai Admin</span>
               </Link>
             </div>
             <nav className="flex space-x-4">
@@ -138,7 +138,7 @@ export default function AdminLayout({
       <footer className="bg-gray-100 border-t border-gray-200 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-sm text-gray-500">
-            <p>&copy; {new Date().getFullYear()} {siteConfig.company.name}. Admin Dashboard.</p>
+            <p>&copy; {new Date().getFullYear()} Healtrate.ai. Admin Dashboard.</p>
           </div>
         </div>
       </footer>

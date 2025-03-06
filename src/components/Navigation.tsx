@@ -41,12 +41,12 @@ const Navigation = () => {
             <Link href="/" className="flex items-center space-x-2">
               <Image
                 src="/logo.svg"
-                alt={`${siteConfig.company.name} Logo`}
+                alt={`$Healtrate.ai Logo`}
                 width={40}
                 height={40}
                 className="w-auto h-8"
               />
-              <span className="font-bold text-xl text-gray-900">{siteConfig.company.name}</span>
+              <span className="font-bold text-xl text-gray-900">Healtrate.ai</span>
             </Link>
           </div>
 

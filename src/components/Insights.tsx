@@ -62,7 +62,7 @@ export default function Insights() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-4xl font-bold text-gray-900 sm:text-5xl md:text-6xl"
             >
-              {siteConfig.insightsPage?.hero?.title || `${siteConfig.company.name} Insights`}
+              {siteConfig.insightsPage?.hero?.title || `$Healtrate.ai Insights`}
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -138,26 +138,26 @@ export default function Insights() {
                   <p className="text-gray-600 mb-4">{article.excerpt}</p>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center">
-                      {article.authorImage ? (
-                        <Image
-                          src={article.authorImage}
-                          alt={article.author}
-                          width={32}
-                          height={32}
-                          className="rounded-full"
-                        />
-                      ) : (
-                        <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                      <div className="w-8 h-8 relative bg-blue-100 rounded-full overflow-hidden flex items-center justify-center">
+                        {article.authorImage ? (
+                          <Image
+                            src={article.authorImage}
+                            alt={article.author}
+                            fill
+                            className="object-cover rounded-full"
+                          />
+                        ) : (
                           <span className="text-blue-600 font-medium">
                             {article.author.charAt(0)}
                           </span>
-                        </div>
-                      )}
+                        )}
+                      </div>
                       <div className="ml-3">
                         <p className="text-sm font-medium text-gray-900">{article.author}</p>
                         <p className="text-sm text-gray-500">{article.date}</p>
                       </div>
                     </div>
+
                     <motion.a
                       href={`/insights/${article.slug}`}
                       whileHover={{ x: 5 }}

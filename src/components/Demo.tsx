@@ -85,7 +85,7 @@ export default function Demo() {
               transition={{ duration: 0.5 }}
               className="text-4xl font-bold text-gray-900 mb-6 tracking-tight"
             >
-              Experience {siteConfig.company.name} in Action
+              Experience Healtrate.ai in Action
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -311,7 +311,7 @@ export default function Demo() {
                 </svg>
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Personalized Walkthrough</h3>
-              <p className="text-gray-600">See how {siteConfig.company.name} adapts to your specific practice workflow and requirements.</p>
+              <p className="text-gray-600">See how Healtrate.ai adapts to your specific practice workflow and requirements.</p>
             </motion.div>
             
             <motion.div 

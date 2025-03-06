@@ -4,7 +4,7 @@ export const siteConfig = {
     name: "Healtrate.ai",
     tagline: "AI-Powered Healthcare Solutions",
     description: "Experience the future of medical practice management with AI-driven solutions.",
-    email: "contact@healtrate.ai",
+    email: "contact@Healtrate.ai",
     phone: "+1 (555) 123-4567",
     address: "123 Healthcare Avenue, San Francisco, CA 94103",
     foundedYear: 2022,

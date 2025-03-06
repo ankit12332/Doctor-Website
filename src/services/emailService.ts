@@ -49,7 +49,7 @@ export const sendDemoNotification = async (demoRequest: DemoRequest): Promise<bo
   
   // Create email body
   const emailBody = `
-    New Demo Request from ${siteConfig.company.name} Website
+    New Demo Request from $Healtrate.ai Website
     
     Name: ${name}
     Email: ${email}

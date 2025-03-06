@@ -8,11 +8,11 @@ const Footer = () => {
   const { config } = useConfig();
   
   const quickLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About Us', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'AI Agents', href: '#ai-agents' },
-    { name: 'Book a Demo', href: '#demo' },
+    { name: 'Home', href: '/' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Solutions', href: '/solutions' },
+    { name: 'AI Agents', href: '/ai-agents' },
+    { name: 'Book a Demo', href: '/demo' },
   ];
 
   const legalLinks = [

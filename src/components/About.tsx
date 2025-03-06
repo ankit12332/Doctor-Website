@@ -153,23 +153,22 @@ export default function About() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-white rounded-xl shadow-sm p-6 text-center border border-gray-100 hover:shadow-md transition-shadow duration-300"
               >
-                <div className="relative w-28 h-28 mx-auto mb-6">
-                  {member.image ? (
-                    <Image 
-                      src={member.image} 
-                      alt={member.name} 
-                      width={112} 
-                      height={112} 
-                      className="rounded-full object-cover border-2 border-blue-200"
-                    />
-                  ) : (
-                    <div className="w-full h-full rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center border-2 border-blue-200">
-                      <span className="text-2xl font-bold text-blue-600">
-                        {member.name.charAt(0)}
-                      </span>
-                    </div>
-                  )}
-                </div>
+              <div className="relative w-28 h-28 mx-auto mb-6">
+                {member.image ? (
+                  <Image 
+                    src={member.image} 
+                    alt={member.name} 
+                    fill
+                    className="rounded-full object-cover border-2 border-blue-200"
+                  />
+                ) : (
+                  <div className="w-full h-full rounded-full bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center border-2 border-blue-200">
+                    <span className="text-2xl font-bold text-blue-600">
+                      {member.name.charAt(0)}
+                    </span>
+                  </div>
+                )}
+              </div>
                 <h3 className="text-xl font-semibold text-gray-900">{member.name}</h3>
                 <p className="text-blue-600 mb-3 text-sm font-medium">{member.role}</p>
                 <p className="text-gray-600 text-sm">{member.bio}</p>

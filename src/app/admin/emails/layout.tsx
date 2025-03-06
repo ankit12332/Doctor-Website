@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import siteConfig from '@/config/siteConfig';
 
 export const metadata: Metadata = {
-  title: `Email Templates | ${siteConfig.company.name} Admin`,
+  title: `Email Templates | $Healtrate.ai Admin`,
   description: 'Manage and customize email notifications sent to users.',
 };
 
